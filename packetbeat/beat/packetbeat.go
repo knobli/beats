@@ -26,6 +26,7 @@ import (
 	"github.com/elastic/beats/packetbeat/protos/mysql"
 	"github.com/elastic/beats/packetbeat/protos/pgsql"
 	"github.com/elastic/beats/packetbeat/protos/redis"
+	"github.com/elastic/beats/packetbeat/protos/smpp"
 	"github.com/elastic/beats/packetbeat/protos/tcp"
 	"github.com/elastic/beats/packetbeat/protos/thrift"
 	"github.com/elastic/beats/packetbeat/protos/udp"
@@ -37,6 +38,7 @@ var EnabledProtocolPlugins map[protos.Protocol]protos.ProtocolPlugin = map[proto
 	protos.MemcacheProtocol: new(memcache.Memcache),
 	protos.MysqlProtocol:    new(mysql.Mysql),
 	protos.PgsqlProtocol:    new(pgsql.Pgsql),
+	protos.SmppProtocol:     new(smpp.SMPP),
 	protos.RedisProtocol:    new(redis.Redis),
 	protos.ThriftProtocol:   new(thrift.Thrift),
 	protos.MongodbProtocol:  new(mongodb.Mongodb),

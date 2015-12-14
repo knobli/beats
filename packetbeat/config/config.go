@@ -42,6 +42,7 @@ type Protocols struct {
 	Mongodb  Mongodb
 	Pgsql    Pgsql
 	Redis    Redis
+	Smpp     Smpp
 	Thrift   Thrift
 }
 
@@ -100,6 +101,9 @@ type Pgsql struct {
 	ProtocolCommon `yaml:",inline"`
 	Max_row_length *int
 	Max_rows       *int
+}
+
+type Smpp struct {
 }
 
 type Thrift struct {

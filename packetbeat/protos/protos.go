@@ -103,6 +103,7 @@ const (
 	MysqlProtocol
 	RedisProtocol
 	PgsqlProtocol
+	SmppProtocol
 	ThriftProtocol
 	MongodbProtocol
 	DnsProtocol
@@ -116,6 +117,7 @@ var ProtocolNames = []string{
 	"mysql",
 	"redis",
 	"pgsql",
+	"smpp",
 	"thrift",
 	"mongodb",
 	"dns",
